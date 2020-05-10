@@ -8,8 +8,9 @@ body{
     background-color: rgb(100, 36, 36);
     color: rgb(75, 73, 73) ;
     display: flex;
+    flex-flow: wrap;
     font-family: sans-serif;
-    justify-content: baseline;
+    justify-content:center;
 }
 
 .container{
@@ -18,6 +19,7 @@ body{
     padding: 30px;
     border-radius: 25px;
     margin-bottom: 70px;
+    
 }
 .title{
     text-align: center;
@@ -27,6 +29,9 @@ body{
 }
 
 .status span{
+    color: bisque;
+}
+.credits span{
     color: bisque;
 }
 .status-action{
@@ -51,9 +56,10 @@ body{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
-    grid-gap: 15px;
+    grid-gap: 20px;
     margin-top: 50px;
     background: rgba(56, 55, 55, 0.267);
+ 
 
     
 }
@@ -65,6 +71,7 @@ body{
     height: 150px;
     width: 150px;
     cursor: pointer;
+    
 }
 
 .x::after{
@@ -80,17 +87,25 @@ body{
     color:rgb(100, 36, 36);
 }
 
+.credits
+{
+    background-color: rgb(100, 36, 36);
+
+    margin: 50px;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 25px;
+    margin-bottom: 70px;
+    
+}
+
 @media only screen and (max-width: 800px){
-    .container{
-        margin-top: 50px;
-        margin: 30px;
-        margin-bottom: 100px;
-        padding: 10px;
-    }
+   
     .game-grid{
         margin-top: 25px;
-        grid-gap: 10px;
-        size: 10px;
+        grid-gap: 15px;
+        size: 15px;
+        
     }
     .gamecell{
         font-size: 150px;
@@ -102,44 +117,126 @@ body{
     }
 
     .o::after{
-        font-size: 150px;
-    }
-    .credits{
-        height: 35px;
-        width: max-content;
-        margin-top: 600px;
-        background-color: rgb(100, 36, 36);
-        color: bisque;
-        
+        font-size: 155px;
     }
     
 }
 
-@media only screen and (max-width: 540px)
-{
+@media only screen and (max-width: 600px){
     .container{
-        margin: 10px;
-        padding: 10px;
+       
+        margin: 30px;
+        padding: 12px;
+
+        
+
+    }
+    .game-grid{
+        margin-top: 20px;
+        grid-gap: 10px;
+        size: 10px;
+    }
+    .gamecell{
+        height: 100px;
+        width: 100px;
     }
 
     .x::after{
-        font-size: 125px;
-
+        font-size: 100px;
     }
+
     .o::after{
-        font-size: 150px;
+        font-size: 125px;
+    }
+
+}
+
+@media only screen and (max-width: 450px){
+    .container{
+       
+        margin: 18px;
+        padding: 12px;
+
+        
+
+    }
+    .game-grid{
+        margin-top: 18px;
+        grid-gap: 8px;
+        size: 8px;
+    }
+    .gamecell{
+        height: 80px;
+        width: 80px;
+    }
+
+    .x::after{
+        font-size: 80px;
+    }
+
+    .o::after{
+        font-size: 105px;
+    }
+  
+}
+
+@media only screen and (max-width: 325px){
+    .container{
+       
+        margin: 15px;
+        padding: 12px;
+
+        
+
+    }
+    .game-grid{
+        margin-top: 14px;
+        grid-gap: 6px;
+        size: 6px;
+    }
+    .gamecell{
+        height: 70px;
+        width: 70px;
+    }
+
+    .x::after{
+        font-size: 70px;
+    }
+
+    .o::after{
+        font-size: 95px;
+    }
+  
+}
+
+@media only screen and (max-width: 245px){
+    .container{
+       
+        margin: 12px;
+        padding: 14px;
+
+        
+
+    }
+    .game-grid{
+        margin-top: 10px;
+        grid-gap: 4px;
+        size: 4px;
+    }
+    .gamecell{
+        height: 60px;
+        width: 60px;
+    }
+
+    .x::after{
+        font-size: 60px;
+    }
+
+    .o::after{
+        font-size: 85px;
     }
     
 }
-.status-action{
-    font-weight: 750;
-}
 
-.credits{
-    height: 55px;
-    width: max-content;
-    margin-top: 600px;
-    background-color: rgb(100, 36, 36);
-    color: bisque;
-    
-}
+
+
