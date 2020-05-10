@@ -70,10 +70,6 @@ body{
 .x::after{
     content: 'x';
     font-size: 150px;
-    
-    
-
-
 }
 .o::after{
     content: '○';
@@ -103,11 +99,10 @@ body{
 
     .x::after{
         font-size: 150px;
-
     }
 
     .o::after{
-        font-size: 175px;
+        font-size: 150px;
     }
     .credits{
         height: 35px;
