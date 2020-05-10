@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(100, 36, 36);
+    color: rgb(75, 73, 73) ;
+    display: flex;
+    font-family: sans-serif;
+    justify-content: baseline;
+}
+
+.container{
+    background-color: rgb(250, 138, 10);
+    margin: 50px;
+    padding: 30px;
+    border-radius: 25px;
+    margin-bottom: 70px;
+}
+.title{
+    text-align: center;
+}
+.title span{
+    color: bisque;
+}
+
+.status span{
+    color: bisque;
+}
+.status-action{
+
+    display: flex;
+    margin-top: 25px;
+    font: 25px;
+    justify-content: space-around;
+    height: 30px;
+}
+.reset{
+    cursor: pointer;
+
+    
+}
+.reset:hover{
+    
+    color: bisque;
+    
+}
+.game-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 15px;
+    margin-top: 50px;
+    background: rgba(56, 55, 55, 0.267);
+
+    
+}
+.gamecell{
+    background-color: rgb(250, 138, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.x::after{
+    content: 'x';
+    font-size: 150px;
+    
+    
+
+
+}
+.o::after{
+    content: '○';
+    font-size: 200px;
+    color: bisque;
+}
+.won::after{
+    color:rgb(100, 36, 36);
+}
+
+@media only screen and (max-width: 800px){
+    .container{
+        margin-top: 50px;
+        margin: 30px;
+        margin-bottom: 100px;
+        padding: 10px;
+    }
+    .game-grid{
+        margin-top: 25px;
+        grid-gap: 10px;
+        size: 10px;
+    }
+    .gamecell{
+        font-size: 150px;
+        width: 150px;
+    }
+
+    .x::after{
+        font-size: 150px;
+
+    }
+
+    .o::after{
+        font-size: 175px;
+    }
+    .credits{
+        height: 35px;
+        width: max-content;
+        margin-top: 600px;
+        background-color: rgb(100, 36, 36);
+        color: bisque;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 540px)
+{
+    .container{
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .x::after{
+        font-size: 125px;
+
+    }
+    .o::after{
+        font-size: 150px;
+    }
+    
+}
+.status-action{
+    font-weight: 750;
+}
+
+.credits{
+    height: 55px;
+    width: max-content;
+    margin-top: 600px;
+    background-color: rgb(100, 36, 36);
+    color: bisque;
+    
+}
