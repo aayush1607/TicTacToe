@@ -44,6 +44,8 @@ body{
 }
 .reset{
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
 
     
 }
@@ -71,6 +73,8 @@ body{
     height: 150px;
     width: 150px;
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
     
 }
 
@@ -96,6 +100,8 @@ body{
     justify-content: center;
     border-radius: 25px;
     margin-bottom: 70px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
     
 }
 
