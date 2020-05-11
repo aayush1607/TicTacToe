@@ -123,7 +123,7 @@ body{
     }
 
     .o::after{
-        font-size: 155px;
+        font-size: 170px;
     }
     
 }
@@ -152,7 +152,7 @@ body{
     }
 
     .o::after{
-        font-size: 125px;
+        font-size: 115px;
     }
 
 }
@@ -181,7 +181,7 @@ body{
     }
 
     .o::after{
-        font-size: 105px;
+        font-size: 95px;
     }
   
 }
@@ -206,11 +206,11 @@ body{
     }
 
     .x::after{
-        font-size: 70px;
+        font-size: 75px;
     }
 
     .o::after{
-        font-size: 95px;
+        font-size: 90px;
     }
   
 }
@@ -243,6 +243,3 @@ body{
     }
     
 }
-
-
-
