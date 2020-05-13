@@ -24,16 +24,7 @@ body{
 .title{
     text-align: center;
 }
-.title span{
-    color: bisque;
-}
 
-.status span{
-    color: bisque;
-}
-.credits span{
-    color: bisque;
-}
 .status-action{
 
     display: flex;
@@ -49,11 +40,8 @@ body{
 
     
 }
-.reset:hover{
-    
-    color: bisque;
-    
-}
+
+/*GAME*/
 .game-grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -78,6 +66,50 @@ body{
     
 }
 
+/*SPANS*/
+.title span{
+    color: bisque;
+}
+
+.status span{
+    color: bisque;
+}
+.credits span{
+    color: bisque;
+}
+
+
+/*HOVER EFFECTS FOR SUPPORTED DEVICES*/
+.reset:hover{
+    
+    color: bisque;
+    
+}
+
+.hover .changex:hover{
+    background-color: rgba(255, 228, 196, 0.747);
+        
+}
+
+.hover .changeo:hover{
+   
+    background-color: rgba(100, 36, 36, 0.753) ;
+    
+}
+
+.hover .x:hover{
+    background-color:bisque ;
+}
+.hover .o:hover{
+    background-color:rgb(100, 36, 36) ;
+}
+
+.hover .won:hover{
+    background-color: bisque;
+}
+
+
+/*PSEUDO ELEMENTS*/
 .x::after{
     content: 'x';
     font-size: 150px;
@@ -87,10 +119,16 @@ body{
     font-size: 200px;
     color: bisque;
 }
+
+
 .won::after{
     color:rgb(100, 36, 36);
 }
 
+
+
+
+/*NAME AND ICONS*/
 .credits
 {
     background-color: rgb(100, 36, 36);
@@ -105,6 +143,9 @@ body{
     
 }
 
+
+/*MEDIA QUERIES*/
+/*800px*/
 @media only screen and (max-width: 800px){
    
     .game-grid{
@@ -128,6 +169,7 @@ body{
     
 }
 
+/*600px*/
 @media only screen and (max-width: 600px){
     .container{
        
@@ -157,6 +199,8 @@ body{
 
 }
 
+
+/*450px*/
 @media only screen and (max-width: 450px){
     .container{
        
@@ -186,6 +230,7 @@ body{
   
 }
 
+/*325px*/
 @media only screen and (max-width: 325px){
     .container{
        
@@ -214,6 +259,8 @@ body{
     }
   
 }
+
+/*245px*/
 
 @media only screen and (max-width: 245px){
     .container{

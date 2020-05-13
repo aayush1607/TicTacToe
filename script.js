@@ -4,6 +4,9 @@ const status= document.querySelector('.status');
 const reset= document.querySelector('.reset');
 const cells= document.querySelectorAll('.gamecell');
 
+//to ignore hover on touch devices.
+document.body.className = 'ontouchstart' in window ? '' : 'hover';
+
 const symbolize=(x)=>x==='x'?'x':'O';
 
 // game
@@ -110,11 +113,64 @@ const symbolize=(x)=>x==='x'?'x':'O';
         if(xnext)
         {
             status.innerHTML=`${symbolize('x')} is next`;
+            document.getElementById("cell1").className=
+                    document.getElementById("cell1").className.replace( /(?:^|\s)changeo(?!\S)/g , ' changex' );
+            
+                    document.getElementById("cell2").className=
+                    document.getElementById("cell2").className.replace( /(?:^|\s)changeo(?!\S)/g , ' changex' );
+
+                    document.getElementById("cell3").className=
+                    document.getElementById("cell3").className.replace( /(?:^|\s)changeo(?!\S)/g , ' changex' );
+
+                    document.getElementById("cell4").className=
+                    document.getElementById("cell4").className.replace( /(?:^|\s)changeo(?!\S)/g , ' changex' );
+
+                    document.getElementById("cell5").className=
+                    document.getElementById("cell5").className.replace( /(?:^|\s)changeo(?!\S)/g , ' changex' );
+
+                    document.getElementById("cell6").className=
+                    document.getElementById("cell6").className.replace( /(?:^|\s)changeo(?!\S)/g , ' changex' );
+
+                    document.getElementById("cell7").className=
+                    document.getElementById("cell7").className.replace( /(?:^|\s)changeo(?!\S)/g , ' changex' );
+
+                    document.getElementById("cell8").className=
+                    document.getElementById("cell8").className.replace( /(?:^|\s)changeo(?!\S)/g , ' changex' );
+
+                    document.getElementById("cell9").className=
+                    document.getElementById("cell9").className.replace( /(?:^|\s)changeo(?!\S)/g , ' changex' );
 
         }
         else
         {
             status.innerHTML=`<span>${symbolize('o')}</span> is next`;
+            document.getElementById("cell1").className=
+                    document.getElementById("cell1").className.replace( /(?:^|\s)changex(?!\S)/g , ' changeo' );
+
+                    document.getElementById("cell2").className=
+                    document.getElementById("cell2").className.replace( /(?:^|\s)changex(?!\S)/g , ' changeo' );
+
+                    document.getElementById("cell3").className=
+                    document.getElementById("cell3").className.replace( /(?:^|\s)changex(?!\S)/g , ' changeo' );
+
+                    document.getElementById("cell4").className=
+                    document.getElementById("cell4").className.replace( /(?:^|\s)changex(?!\S)/g , ' changeo' );
+
+                    document.getElementById("cell5").className=
+                    document.getElementById("cell5").className.replace( /(?:^|\s)changex(?!\S)/g , ' changeo' );
+
+                    document.getElementById("cell6").className=
+                    document.getElementById("cell6").className.replace( /(?:^|\s)changex(?!\S)/g , ' changeo' );
+
+                    document.getElementById("cell7").className=
+                    document.getElementById("cell7").className.replace( /(?:^|\s)changex(?!\S)/g , ' changeo' );
+
+                    document.getElementById("cell8").className=
+                    document.getElementById("cell8").className.replace( /(?:^|\s)changex(?!\S)/g , ' changeo' );
+
+                    document.getElementById("cell9").className=
+                    document.getElementById("cell9").className.replace( /(?:^|\s)changex(?!\S)/g , ' changeo' );
+           
         }
      }
 
@@ -134,7 +190,41 @@ const symbolize=(x)=>x==='x'?'x':'O';
         i.classList.remove('x');
         i.classList.remove('o');
         i.classList.remove("won");
+        document.getElementById("cell1").className=
+                    document.getElementById("cell1").className.replace( /(?:^|\s)changeo(?!\S)/g , ' changex' );
+            
+                    document.getElementById("cell2").className=
+                    document.getElementById("cell2").className.replace( /(?:^|\s)changeo(?!\S)/g , ' changex' );
+
+                    document.getElementById("cell3").className=
+                    document.getElementById("cell3").className.replace( /(?:^|\s)changeo(?!\S)/g , ' changex' );
+
+                    document.getElementById("cell4").className=
+                    document.getElementById("cell4").className.replace( /(?:^|\s)changeo(?!\S)/g , ' changex' );
+
+                    document.getElementById("cell5").className=
+                    document.getElementById("cell5").className.replace( /(?:^|\s)changeo(?!\S)/g , ' changex' );
+
+                    document.getElementById("cell6").className=
+                    document.getElementById("cell6").className.replace( /(?:^|\s)changeo(?!\S)/g , ' changex' );
+
+                    document.getElementById("cell7").className=
+                    document.getElementById("cell7").className.replace( /(?:^|\s)changeo(?!\S)/g , ' changex' );
+
+                    document.getElementById("cell8").className=
+                    document.getElementById("cell8").className.replace( /(?:^|\s)changeo(?!\S)/g , ' changex' );
+
+                    document.getElementById("cell9").className=
+                    document.getElementById("cell9").className.replace( /(?:^|\s)changeo(?!\S)/g , ' changex' );
+
+
+     
+        
+        
+     
      }
+     
+
   
  }
 
@@ -169,4 +259,3 @@ const symbolize=(x)=>x==='x'?'x':'O';
  for(const i of cells){
      i.addEventListener('click',handleCell)
  }
- 
